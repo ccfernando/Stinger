@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>STINGER 1.0</title>
+    <link rel="stylesheet" href="css/Styles.css">
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <img id="header_img" src="img/header.png" alt="">
+    </header>
+<hr>
+<article id="bg_music">
+<button class="btn" type="button" name="button" onclick="playSoundEffect('bg','background1')" >Intro</button>
+<button class="btn" type="button" name="button" onclick="playSoundEffect('bg','Actual_BG')" >Sad Background</button>
+<button class="btn" type="button" name="button" onclick="playSoundEffect('bg','KiniAngakongSuliran')" >Ang Akong Suliran</button>
+<button class="btn" type="button" name="button" onclick="playSoundEffect('bg','GAPNUDSAKINABUHI')" >Gapnud sa Kinabuhi</button>
+<button class="btn" type="button" name="button" onclick="playSoundEffect('bg','Photograph')" >Photograph</button>
+<button class="btn" type="button" name="button" onclick="playSoundEffect('bg','Hayaanmosila')" >Hayaan mo sila</button>
+<button class="btn" type="button" name="button" onclick="playSoundEffect('bg','Haunted')" >Haunted</button>
+
+
+<hr>
+
+  <button class="btn2" type="button" name="button" onclick="playSoundEffect('effect','Applause')">Applause</button>
+  <button class="btn2" type="button" name="button" onclick="playSoundEffect('effect','Heartbeat')" >Heartbeat</button>
+  <button class="btn2" type="button" name="button" onclick="playSoundEffect('effect','Howl')" >Howl</button>
+  <button class="btn2" type="button" name="button" onclick="playSoundEffect('effect','Laugh1')">Laughter</button>
+  <button class="btn2" type="button" name="button" onclick="playSoundEffect('effect','Oh-no')">Oh-no</button>
+  <button class="btn2" type="button" name="button" onclick="playSoundEffect('effect','Pianotransition')" >Piano Transition</button>
+  <button class="btn2" type="button" name="button" onclick="playSoundEffect('effect','Toinks')">Toinks</button>
+  <button class="btn2" type="button" name="button" onclick="playSoundEffect('effect','wow')">Wow</button>
+</article>
+<hr>
+
+
+<table>
+<tr>
+<td>
+<div class="container">
+  <div class="calendar-container">
+    <header>
+      <div class="month">Volume </div>
+    </header>
+
+    <table class="calendar">
+
+      <thead>
+        <tr>
+          <td>Background <hr></td>
+          <td>Effects <hr></td>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td><input id="vol-control1" type="range" min="0" max="100" step="1" oninput="SetVolumeBG(this.value)" onchange="SetVolumeBG(this.value)"></input></td>
+          <td><input id="vol-control2" type="range" min="0" max="100" step="1" oninput="SetVolumeEffects(this.value)" onchange="SetVolumeEffects(this.value)"></input></td>
+        </tr>
+      </tbody>
+
+    </table>
+
+    <div class="ring-left"></div>
+    <div class="ring-right"></div>
+
+  </div> <!-- end calendar-container -->
+</div> <!-- end container -->
+</td>
+
+<td><div class="sibling-fade">
+  <span><img class="menu_img" src="img/joke.png" alt="" onclick="playSoundEffect('jokes','ItsJokeTime');rotateMe();"></span>
+  <span><img class="menu_img" src="img/ads.png" alt=""></span>
+  <span><img class="menu_img" src="img/joke.png" alt=""></span>
+</div></td>
+
+</tr>
+
+
+
+
+</table>
+<footer> Radio Stinger | &copy; ccfernando</footer>
+
+<audio id="background" src="SOUNDS/backgrounds/background1.mp3" >
+<audio id="effects" src="SOUNDS/effects/Laugh1.mp3">
+<audio id="jokes" src="SOUNDS/Jokes/ItsJokeTime.mp3">
+  <script type="text/javascript" src="js/JavaScript.js">
+  </script>
+  </body>
+</html>
